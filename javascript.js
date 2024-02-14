@@ -1,12 +1,3 @@
-const days = ["null", "Tahi", "Rua", "Toru", "Whā", "Rima", "Ono", "null"];
-let numb;
-numb = 1;
-var user;
-let day = days[numb];
-const plus = document.getElementById('plus');
-const mins = document.getElementById('mins');
-const h1 = document.getElementById('displayDay');
-h1.innerHTML = '<h1>'+day+'</h1>';
 function add() {
     numb++;
     if (numb == 7){
