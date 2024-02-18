@@ -4,6 +4,9 @@
     margin-right: auto;
     text-align: center;
 }
+body {
+    background-size: cover;
+}
 .bottomleft {
     position: fixed;
     bottom: 0;
@@ -19,10 +22,7 @@
     margin-left: 310pt;
 }
 .pad3 {
-    margin-left: 296pt
-}
-.days {
-    margin-left: 45pt;
+    margin-left: 303pt
 }
 .white {
     background-color: white;
@@ -38,6 +38,9 @@
 .in {
     display: inline-block;
     margin-top: 0pt;
+}
+.increse {
+    margin-left: 3pt
 }
 .tahi {
     display: inline-block;
