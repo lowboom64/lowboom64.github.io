@@ -204,7 +204,7 @@
             const days = ["null", "Tahi", "Rua", "Toru", "Whā", "Rima", "Ono", "null"];
             // this is PAIN
             // so much interal screaming
-            var old = new Date("2024-02-13 01:00")
+            var old = new Date("2024-02-11 00:00")
             var today = new Date();
             console.log(Math.floor((today - old) / 1000 / 60 / 60 / 24 ) + " day(s) ago");
             var daysago = (Math.floor((today - old) / 1000 / 60 / 60 / 24 ));
@@ -216,7 +216,7 @@
                     break;
                 }
                 weekends = weekends - 1;
-                daysago = daysago - 1;
+                daysago = daysago - 2;
             }
             // update on holladays
             daysago = daysago - 0;
