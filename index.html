@@ -219,10 +219,11 @@
             let counter = 1;
             let counter2 = 1;
             let i = 0;
+            const numbs1to6 = ["null","1","2","3","4","5","6"]
             const numb1to6m = ["null","tahi","rua","toru","wha","rima","ono"];
             for (let i = 0; i < 30; i++) {
                 let cookieloader = cookies[i].replace(numb1to6m[counter] + "=","");
-                document.getElementById(numb1to6m + counter2).value = cookieloader;
+                document.getElementById(numb1to6m + numb1to6[counter2]).value = cookieloader;
                 counter++;
                 i++;
                 if (counter == 7) {
