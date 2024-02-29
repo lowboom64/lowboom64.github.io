@@ -223,7 +223,7 @@
             const numb1to6m = ["null","tahi","rua","toru","wha","rima","ono"];
             for (let i = 0; i < 30; i++) {
                 let cookieloader = cookies[i].replace(numb1to6m[counter] + "=","");
-                document.getElementById(numb1to6m + numb1to6[counter2]).value = cookieloader;
+                document.getElementById(numb1to6m[counter] + numb1to6[counter2]).value = cookieloader;
                 counter++;
                 i++;
                 if (counter == 7) {
