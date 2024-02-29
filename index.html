@@ -218,11 +218,13 @@
             let cookieloader;
             let counter = 1;
             let counter2 = 1;
+            let i = 0;
             const numb1to6m = ["null","tahi","rua","toru","wha","rima","ono"];
             for (let i = 0; i < 30; i++) {
                 let cookieloader = cookies[i].replace(numb1to6m[counter] + "=","");
                 document.getElementById(numb1to6m + counter2).value = cookieloader;
                 counter++;
+                i++;
                 if (counter == 7) {
                     counter = 1;
                     counter2++
