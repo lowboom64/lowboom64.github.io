@@ -217,13 +217,15 @@
         <script>
             let cookieloader;
             let counter = 1;
+            let counter2 = 1;
             const numb1to6m = ["null","tahi","rua","toru","wha","rima","ono"];
             for (let i = 0; i < 30; i++) {
-                cookieloader = cookies[i].replace(numb1to6m[counter] + "=","");
-                document.getElementById(numb1to6m).value = cookieloader;
+                let cookieloader = cookies[i].replace(numb1to6m[counter] + "=","");
+                document.getElementById(numb1to6m + counter2).value = cookieloader;
                 counter++;
                 if (counter == 7) {
                     counter = 1;
+                    counter2++
                 }
             }
         </script>
