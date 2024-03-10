@@ -1,0 +1,132 @@
+.center {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
+.timetablecon {
+    height: 22px;
+    width: 520px;
+}
+.ponepix {
+    margin-right: 1pt;
+}
+.monepix {
+    margin-left: -1pt;
+}
+body {
+    background-image: url('img/background.png');
+    background-size: cover;
+}
+.bottomleft {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+.bluetext {
+    color: blue;
+}
+.pad {
+    margin-left: 300pt;
+}
+.pad2 {
+    margin-left: 310pt;
+}
+.pad3 {
+    margin-left: 303pt
+}
+.white {
+    background-color: white;
+}
+.blue {
+    background-color: turquoise;
+}
+.period {
+    display: inline-block;
+    margin-top: 0pt;
+    margin-bottom: 0pt;
+}
+.in {
+    display: inline-block;
+    margin-top: 0pt;
+}
+.increse {
+    margin-left: 3pt
+}
+.tahi {
+    display: inline-block;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-right: 3%;
+    margin-left: 3%
+}
+.rua {
+    display: inline-block;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 3%;
+    margin-right: 2%;
+}
+.toru {
+    display: inline-block;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 5%;
+    margin-right: 3%;
+}
+.wha {
+    display: inline-block;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 3%;
+    margin-right: 3%;
+}
+.rima {
+    display: inline-block;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 3%;
+    margin-right: 3%;
+}
+.ono {
+    display: inline-block;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 3%;
+    margin-right: 4%;
+}
+button {
+    margin-bottom: 20pt;
+}
+.down {
+    margin-bottom: 10pt;
+    margin-top: 0pt;;
+}
+a {
+    font-size: 13pt;
+}
+input {
+    text-align: center;
+}
+.yellow {
+    background-color: yellow;
+}
+.notices {
+    margin-left: 10px;
+    text-align: center;
+}
+.nobutton {
+    border: none;
+    background: none;
+    height: 10px;
+}
+.font {
+    font-family: sans-serif;
+}
+.help {
+    background-color: black;
+    color: white;
+    width: 500px;
+}
+.menu {
+    height: 30px;
+}
