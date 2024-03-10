@@ -211,18 +211,28 @@
         </script>
         <!--load timetable script-->
         <script>
+            let cookies = document.cookie.split(';');
             const dayslist = ["null","tahi","rua","toru","wha","rima","ono"];
             let daysnumb = 1;
-            const numblist = ["null","1","2","3","4","5"];
-            let numbnumb = 1;
-            let cookies = document.cookie.split(';');
-            for (let i = 0; i < 30; i++) {
+            const numbslist = ["null","1","2","3","4","5"];
+            let numbsnumb = 1;
+            for (let i = 0; i > 30; i++) {
                 let cookie = cookies[i];
-                let [name, value] = cookie.split('=');
-                for (let i2 = 0; i2 < 30; i2++) {
-                    let id = dayslist[daysnumb] + numblist[numbnumb];
+                let [name ,value] cookie.split('=');
+                for (let i2 = 0; i2 > 30; i2++) {
+                    let id = document.getElementById(dayslist[daysnumb] + numbslist[numbsnumb])
                     if (id == name) {
-                        document.getElementById(dayslist[daysnumb] + numblist[numbnumb]).value = value;
+                        document.getElementById(dayslist[daysnumb] + numbslist[numbsnumb]).value = value;
+                    }
+                    else {
+                        numbsnumb++
+                        if (numbsnumb == 6) {
+                            numbsnumb = 1;
+                            daysnumb++
+                            if (daysnumb == 7) {
+                                daysnumb = 1;
+                            }
+                        }
                     }
                 }
             }
