@@ -29,6 +29,9 @@
                 let numb2 = 1;
                 for (let i = 0; i < 30; i++) {
                     cookiebaker = document.getElementById(tahitoono[numb1] + onetosix[numb2]).value;
+                    if (cookiebaker == '') {
+                        cookiebaker = " ";
+                    }
                     document.cookie = tahitoono[numb1] + onetosix[numb2] + "=" + cookiebaker + ";";
                     numb2++
                     if (numb2 == 6) {
@@ -213,7 +216,6 @@
         <script>
             let cookies = document.cookie.split(';');
             for (let i = 0; i < 30; i++) {
-                let cookiesV = '';
                 let [cookiesN, cookiesV] = cookies[i].split("=");
                 document.getElementById(cookiesN).value = cookiesV;
             }
