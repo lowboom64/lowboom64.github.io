@@ -216,10 +216,11 @@
         <script>
             let cookies = document.cookie.split(';');
             let number = 0;
-            let [name, value]
             for (let i = 0; i < 30; i++) {
-                [name, value] = cookies[number].split('=');
-                document.getElementById(name).value = value;
+                let [name, value] = cookies[number].split('=');
+                if (document.getElementById(name)) {
+                    document.getElementById(name).value = value;    
+                }
                 number++
             }
         </script>
