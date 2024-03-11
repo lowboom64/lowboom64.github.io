@@ -214,7 +214,7 @@
             let cookies = document.cookie.split(';');
             for (let i = 0; i < 30; i++) {
                 let [cookiesN, cookiesV] = cookies[i].split("=");
-                if (cookiesV != null) {
+                if (cookiesV != '') {
                     document.getElementById(cookiesN).value = cookiesV;
                 }
             }
