@@ -216,8 +216,8 @@
         <script>
             let cookies = document.cookie.split(';');
             for (let i = 0; i < 30; i++) {
-                let [cookiesN, cookiesV] = cookies[i].split("=");
-                document.getElementById(cookiesN).value = cookiesV;
+                let [name, value] = cookie[i].split('=');
+                document.getElementById(name).value = value;
             }
         </script>
     </body>
