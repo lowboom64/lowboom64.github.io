@@ -218,8 +218,9 @@
             let number = 0;
             for (let i = 0; i < 30; i++) {
                 let [name, value] = cookies[number].split('=');
-                namelist = name.split('');
+                let namelist = name.split('');
                 console.log(namelist);
+                console.log(name);
                 if (document.getElementById(name)) {
                     document.getElementById(name).innerHTML = value;    
                 }
