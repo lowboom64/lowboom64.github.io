@@ -215,9 +215,11 @@
         <!--load timetable script-->
         <script>
             let cookies = document.cookie.split(';');
+            let number = 0;
             for (let i = 0; i < 30; i++) {
-                let [name, value] = cookies[i].split('=');
+                let [name, value] = cookies[number].split('=');
                 document.getElementById(name).value = value;
+                number++
             }
         </script>
     </body>
