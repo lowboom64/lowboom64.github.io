@@ -221,6 +221,10 @@
                 if (document.getElementById(name)) {
                     document.getElementById(name).value = value;    
                 }
+                else {
+                    name = name.replace(' ','');
+                    document.getElementById(name).value = value;
+                }
                 number++
             }
         </script>
