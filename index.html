@@ -213,10 +213,9 @@
         <script>
             let cookies = document.cookie.split(';');
             for (let i = 0; i < 30; i++) {
+                let cookiesV = '';
                 let [cookiesN, cookiesV] = cookies[i].split("=");
-                if (cookiesV != '') {
-                    document.getElementById(cookiesN).value = cookiesV;
-                }
+                document.getElementById(cookiesN).value = cookiesV;
             }
         </script>
     </body>
