@@ -218,7 +218,8 @@
             let number = 0;
             for (let i = 0; i < 30; i++) {
                 let [name, cvalue] = cookies[number].split('=');
-                document.getElementById(name).value = cvalue;
+                let name2 = name;
+                document.getElementById(name2).value = cvalue;
                 number++
             }
         </script>
