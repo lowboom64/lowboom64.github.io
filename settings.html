@@ -28,7 +28,7 @@
                 }
             } 
         </script>
-        <!--how the timetable is saved-->
+        <!--how the colours are saved-->
         <script>
             function save() {
                 let cookiebaker
@@ -37,7 +37,7 @@
                 let numb1 = 1;
                 let numb2 = 1;
                 for (let i = 0; i < 30; i++) {
-                    cookiebaker = document.getElementById(tahitoono[numb1] + onetosix[numb2]).style;
+                    cookiebaker = document.getElementById(tahitoono[numb1] + onetosix[numb2]).style.backgroundColor;
                     document.cookie = tahitoono[numb1] + onetosix[numb2] + "c" + "=" + cookiebaker + ";";
                     numb2++
                     if (numb2 == 6) {
