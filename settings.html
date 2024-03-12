@@ -223,15 +223,16 @@
         <script>
             let cookies = document.cookie.split(';');
             let number = 0;
-            for (let i = 0; i < 30; i++) {
+            for (let i = 0; i < 60; i++) {
                 let [name, value] = cookies[number].split('=');
-                namelist = name.split('');
+                name = name.replace(' ','')
+                let namelist = name.split('');
                 console.log(namelist);
-                if (document.getElementById(name)) {
-                    document.getElementById(name).innerHTML = value;    
+                if (namelist[0] == 'c') {
+                    name = name.replace('c','')
+                    document.getElementById(name).style.backgroundColor = value;
                 }
                 else {
-                    name = name.replace(' ','');
                     document.getElementById(name).innerHTML = value;
                 }
                 number++
