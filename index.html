@@ -220,7 +220,6 @@
                 let [name, value] = cookies[number].split('=');
                 let namelist = name.split('');
                 let namelistlen = namelist.length;
-                namelistlen = namelistlen - 1;
                 if (namelist[namelistlen] == 'c') {
                     name = name.replace(' ','')
                     document.getElementById(name).style.backgroundColor = value;
