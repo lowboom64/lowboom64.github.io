@@ -218,19 +218,12 @@
             let number = 0;
             for (let i = 0; i < 30; i++) {
                 let [name, value] = cookies[number].split('=');
+                name = name.replace(' ','')
                 let namelist = name.split('');
-                let namelistlen = namelist.length;
-                if (namelist[namelistlen] == 'c') {
-                    name = name.replace(' ','')
-                    document.getElementById(name).backgroundColor = value;
+                if (namelist[0] == 'c') {
+                    document.getElementById(name).style.backgroundColor = value;
                 }
-                if (document.getElementById(name)) {
-                    document.getElementById(name).value = value;    
-                }
-                else {
-                    name = name.replace(' ','');
-                    document.getElementById(name).value = value;
-                }
+                document.getElementById(name).value = value;
                 number++
             }
         </script>
