@@ -220,13 +220,12 @@
                 let [name, value] = cookies[number].split('=');
                 let namelist = name.split('');
                 console.log(namelist);
-                console.log(name);
                 if (document.getElementById(name)) {
-                    document.getElementById(name).innerHTML = value;    
+                    document.getElementById(name).value = value;    
                 }
                 else {
                     name = name.replace(' ','');
-                    document.getElementById(name).innerHTML = value;
+                    document.getElementById(name).value = value;
                 }
                 number++
             }
