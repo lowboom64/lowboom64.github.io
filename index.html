@@ -219,7 +219,12 @@
             for (let i = 0; i < 30; i++) {
                 let [name, value] = cookies[number].split('=');
                 let namelist = name.split('');
-                console.log(namelist);
+                let namelistlen = namelist.length;
+                namelistlen = namelistlen - 1;
+                if (namelist[namelistlen] == 'c') {
+                    name = name.replace(' ','')
+                    document.getElementById(name).style = value;
+                }
                 if (document.getElementById(name)) {
                     document.getElementById(name).value = value;    
                 }
