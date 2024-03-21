@@ -113,6 +113,16 @@ input {
 .notices {
     margin-left: 10px;
     text-align: center;
+    border: 2px;
+    border-style: solid;
+    border-color: black;
+    text-decoration: none;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: turquoise;
+    color: black;
 }
 .nobutton {
     border: none;
@@ -132,4 +142,25 @@ input {
 }
 .colorbutton {
     height: 20px;
+}
+.right {
+    float: right;
+}
+.savebutton {
+    width: 50px
+}
+.colorbuttons {
+    background-color: white;
+    width: 500px;
+    height: 45px;
+}
+.halfbutton {
+    margin: none;
+    border: 5px;
+    border-color: black;
+    background-color: none;
+    padding-bottom: none;
+}
+.iframe {
+    width: 500px;
 }
